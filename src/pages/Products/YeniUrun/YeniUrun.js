@@ -1,14 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import {Text, StyleSheet, View, FlatList, ImageBackground} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {background} from '../../assets/index';
-import Card4 from '../../components/Card4/Card4';
-import NavBar from '../../components/NavBar/NavBar';
-import {useFetch} from '../../hooks/useFetch/useFetch';
-import colors from '../../theme/colors/colors';
+import {background} from '../../../assets/index';
+import Card4 from '../../../components/Card4/Card4';
+import NavBar from '../../../components/NavBar/NavBar';
+import {useFetch} from '../../../hooks/useFetch/useFetch';
+import colors from '../../../theme/colors/colors';
 import Config from 'react-native-config';
-import {Loading} from '../../components/Loading/Loading';
-import {Error} from '../../components/Error/Error';
+import {Loading} from '../../../components/Loading/Loading';
+import {Error} from '../../../components/Error/Error';
+import styles from './YeniUrun.style';
 
 const YeniUrun = ({navigation}) => {
   // const {loading, data, error} = useFetch('http://10.0.2.2:3000/categories1');
@@ -70,29 +71,5 @@ const YeniUrun = ({navigation}) => {
     </SafeAreaView>
   );
 };
-const styles = StyleSheet.create({
-  headerText: {
-    marginTop: 10,
-    marginLeft: 10,
-  },
-  listContainer: {
-    marginHorizontal: 20,
-    marginBottom: 85,
-    marginTop: 10,
-    flex: 1,
-  },
-  container: {
-    flexDirection: 'row',
-
-    alignItems: 'center',
-    borderRadius: 15,
-    //justifyContent: 'space-around',
-    marginTop: 10,
-
-    width: '100%',
-    height: 60,
-    backgroundColor: 'white',
-  },
-});
 
 export default YeniUrun;

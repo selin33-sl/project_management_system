@@ -9,6 +9,7 @@ import {Mobile} from '../../pages/Mobile/Mobile';
 import {PersonelStack} from '../PersonelStack/PersonelStack';
 import {ProductStack} from '../ProductStack/ProductStack';
 import {BayiStack} from '../BayiStack/BayiStack';
+import {HomeStack} from '../HomeStack/HomeStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -25,7 +26,7 @@ export const BottomTab = () => {
 
   return (
     <NavigationContainer>
-      <Tab.Navigator screenOptions={screenOptions} initialRouteName="Home">
+      <Tab.Navigator screenOptions={screenOptions} initialRouteName="HomeStack">
         <Tab.Screen
           name="PersonelStack"
           component={PersonelStack}
@@ -43,8 +44,8 @@ export const BottomTab = () => {
           }}></Tab.Screen>
 
         <Tab.Screen
-          name="Home"
-          component={Home}
+          name="HomeStack"
+          component={HomeStack}
           options={{
             tabBarButton: props => <CustomButton {...props}></CustomButton>,
           }}></Tab.Screen>

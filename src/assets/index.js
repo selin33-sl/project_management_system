@@ -16,6 +16,8 @@ const user_add = require('./icons/user_add.png');
 const user = require('./icons/user.png');
 const email = require('./icons/email.png');
 const lock = require('./icons/lock.png');
+const phone = require('./icons/phone.png');
+const location = require('./icons/location.png');
 
 const AASS_dark = require('./icons/categories_dark/Acil-anons-ve-seslendirme-sistemleri.png');
 const GK_dark = require('./icons/categories_dark/Geçiş-Kontrol.png');
@@ -42,6 +44,8 @@ const YAS_light = require('./icons/categories_light/Yangın-alarm-sistemleri.png
 const ZAK_light = require('./icons/categories_light/zayıf-akım-kablo.png');
 
 export {
+  location,
+  phone,
   lock,
   email,
   user,

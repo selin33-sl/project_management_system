@@ -1,9 +1,9 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Products from '../../pages/Products/Products';
-import UrunAltBaslik from '../../pages/Products/UrunAltBaslik';
-import YeniUrunDetay from '../../pages/Products/YeniUrunDetay';
-import YeniUrun from '../../pages/Products/YeniUrun';
+import Products from '../../pages/Products/Products/Products';
+import UrunAltBaslik from '../../pages/Products/UrunAltBaslik/UrunAltBaslik';
+import YeniUrunDetay from '../../pages/Products/YeniUrunDetay/YeniUrunDetay';
+import YeniUrun from '../../pages/Products/YeniUrun/YeniUrun';
 
 const Stack = createNativeStackNavigator();
 
